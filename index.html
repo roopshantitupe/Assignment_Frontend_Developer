@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Chat Bot</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css"> 
+
+</head>
+<body>
+	<!-- CHAT BAR BLOCK -->
+
+	<div class="chat-bar-collapsible">
+		<button id="chat-button" type="button" class="collapsible"><h2>IRIS</h2>
+
+			<h3>Hello</h3> <i id="chat-icon" style="color:white;" class="fas fa-hand-paper"></i>
+			<p>I am Iris, a virtual assistant</p>
+			<div id="overlap_icon"><big><big><big><big><i class="fas fa-robot" id="overlap_icon_i"></i></big></big></big></big>
+			</div>
+			<p>How may I help you?</p>
+
+		</button>
+
+		<div class="content">
+			<div class="full-chat-block">
+				<div class="outer-container">
+					<div class="chat-container">
+						<!-- messages -->
+						<div id="chatbox">
+							<h5 id="chat-timestamp"></h5>
+		
+							<p id="botStarterMessage" class="botText"><span>Frequently asked questions?</span></p>	
+						</div>
+						
+						<!-- Frequently asked questions -->
+
+						<div class="frequent_questions">
+							<div id="frequent_questions_para_1">
+								<input type="radio" name="radio_1" onselect="frequent_questions_1()">
+								<p id="frequent_questions_para_1_1">Can I redeem my FB?</p>
+							</div>
+							<br>
+							<div>
+								<input type="radio" name="radio_2" >
+								<p>How do I pay my credit card bill?</p>
+							</div>
+							<br>
+							<div>
+								<input type="radio" name="radio_3">
+								<p>How can I get my Account Statement?</p>
+							</div>
+							<br>
+							<div>
+								<input type="radio" name="radio_4">
+								<p>What is the tenure of Fixed Deposit?</p>
+							</div>
+							<br>
+						</div>
+
+							<div class="new_converstaion">
+							<div>
+							<!-- User input box -->
+								<div class="chat-bar-input-block">
+									<div id="userInput">
+										<div class="chat-bar-icons">
+										<button id="textInput" class="input-box"  name="msg"><i id="chat-icon" style="color:orange;" class="fas fa-comments" onclick="startConversation()"></i>Start a New Conversation</button>
+										<p></p>
+
+									</div>
+									</div>
+								</div>
+
+
+								<div id=chat-bar-bottom></div>	
+
+							</div>
+							</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+</body>
+
+<script src="scripts/responses.js"></script>
+<script src="scripts/main.js"></script>
+</html>
